@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class loginmanager : MonoBehaviour
 {
+    public InputField contra;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +18,16 @@ public class loginmanager : MonoBehaviour
     {
         
     }
+    public void contraa()
+    {
+        if(contra.text == "messi22")
+        {
+            Debug.Log("Access Granted");
+        }
+        else
+        {
+            Debug.Log("Access Denied");
+        }
+    }
+
 }
